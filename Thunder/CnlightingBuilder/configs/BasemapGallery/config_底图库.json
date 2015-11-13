@@ -1,0 +1,108 @@
+{
+  "basemapGallery": {
+    "basemaps": [
+      {
+        "title": "中国地图彩色版",
+        "thumbnailUrl": "//lytest.maps.arcgis.com/sharing/rest/content/items/5cd32b831bfb43d08e5ee75e7b40d53d/info/thumbnail/ago_downloaded.png",
+        "layers": [
+          {
+            "id": "ChinaOnlineStreetColor_3384",
+            "layerType": "ArcGISTiledMapServiceLayer",
+            "opacity": 1,
+            "visibility": true,
+            "url": "http://map.geoq.cn/ArcGIS/rest/services/ChinaOnlineStreetColor/MapServer"
+          }
+        ],
+        "spatialReference": {
+          "wkid": 102100
+        }
+      },
+      {
+        "title": "中国地图灰色版",
+        "thumbnailUrl": "//lytest.maps.arcgis.com/sharing/rest/content/items/74e992f4fce3450aaf57a9a0df0007c3/info/thumbnail/cn_canvas.jpg",
+        "layers": [
+          {
+            "id": "ChinaOnlineStreetGray_3710",
+            "layerType": "ArcGISTiledMapServiceLayer",
+            "opacity": 1,
+            "visibility": true,
+            "url": "http://map.geoq.cn/ArcGIS/rest/services/ChinaOnlineStreetGray/MapServer"
+          }
+        ],
+        "spatialReference": {
+          "wkid": 102100
+        }
+      },
+      {
+        "title": "中国影像图",
+        "thumbnailUrl": "//lytest.maps.arcgis.com/sharing/rest/content/items/49ec96896f3449b5b7f50b541e3f75d5/info/thumbnail/ago_downloaded.png",
+        "layers": [
+          {
+            "id": "World_Imagery_2017",
+            "opacity": 1,
+            "visibility": true,
+            "url": "http://services.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer"
+          }
+        ],
+        "spatialReference": {
+          "wkid": 102100,
+          "latestWkid": 3857
+        }
+      },
+      {
+        "title": "国家地理",
+        "thumbnailUrl": "//lytest.maps.arcgis.com/sharing/rest/content/items/f0cde898b3444e70a61ba8dae30aade9/info/thumbnail/ago_downloaded.png",
+        "layers": [
+          {
+            "id": "NatGeo_World_Map_8368",
+            "opacity": 1,
+            "visibility": true,
+            "url": "http://services.arcgisonline.com/ArcGIS/rest/services/NatGeo_World_Map/MapServer"
+          }
+        ],
+        "spatialReference": {
+          "wkid": 102100,
+          "latestWkid": 3857
+        }
+      },
+      {
+        "title": "天地图地图",
+        "thumbnailUrl": "//lytest.maps.arcgis.com/sharing/rest/content/items/ccc7d6496d3a49a9bbe39e70d14a9aa9/info/thumbnail/ago_downloaded.png",
+        "layers": [
+          {
+            "templateUrl": "http://{subDomain}.tianditu.cn/vec_w/wmts?service=wmts&request=GetTile&version=1.0.0&LAYER=vec&tileMatrixSet=w&TileMatrix={level}&TileRow={row}&TileCol={col}&style=default&format=tiles",
+            "id": "WebTiled_4805",
+            "type": "WebTiledLayer",
+            "layerType": "WebTiledLayer",
+            "title": "TIANDITU Basemap",
+            "copyright": "TIANDITU",
+            "fullExtent": {
+              "xmin": -20037508.342787,
+              "ymin": -20037508.34278,
+              "xmax": 20037508.34278,
+              "ymax": 20037508.342787,
+              "spatialReference": {
+                "wkid": 102100
+              }
+            },
+            "subDomains": [
+              "t0",
+              "t1",
+              "t2",
+              "t3",
+              "t4",
+              "t5",
+              "t6",
+              "t7"
+            ],
+            "visibility": true,
+            "opacity": 1
+          }
+        ],
+        "spatialReference": {
+          "wkid": 102100
+        }
+      }
+    ]
+  }
+}

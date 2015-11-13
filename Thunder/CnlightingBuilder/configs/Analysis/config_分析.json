@@ -1,0 +1,75 @@
+{
+  "analysisTools": [
+    {
+      "name": "AggregatePoints",
+      "showHelp": true,
+      "showCredits": true,
+      "showChooseExtent": true,
+      "showReadyToUseLayers": true,
+      "returnFeatureCollection": false,
+      "toolLabel": "聚合点"
+    },
+    {
+      "name": "CalculateDensity",
+      "showHelp": true,
+      "showCredits": true,
+      "showChooseExtent": true,
+      "showReadyToUseLayers": true,
+      "returnFeatureCollection": false,
+      "toolLabel": "计算密度"
+    },
+    {
+      "name": "CreateBuffers",
+      "showHelp": true,
+      "showCredits": true,
+      "showChooseExtent": true,
+      "showReadyToUseLayers": true,
+      "returnFeatureCollection": false,
+      "toolLabel": "创建缓冲区"
+    },
+    {
+      "name": "CreateViewshed",
+      "showHelp": true,
+      "showCredits": true,
+      "showChooseExtent": true,
+      "showReadyToUseLayers": true,
+      "returnFeatureCollection": false,
+      "toolLabel": "创建视域"
+    },
+    {
+      "name": "ExtractData",
+      "showHelp": true,
+      "showCredits": true,
+      "showChooseExtent": true,
+      "showReadyToUseLayers": true,
+      "toolLabel": "提取数据"
+    },
+    {
+      "name": "FindSimilarLocations",
+      "showHelp": true,
+      "showCredits": true,
+      "showChooseExtent": true,
+      "showReadyToUseLayers": true,
+      "returnFeatureCollection": false,
+      "toolLabel": "查找相似位置"
+    },
+    {
+      "name": "PlanRoutes",
+      "showHelp": true,
+      "showCredits": true,
+      "showChooseExtent": true,
+      "showReadyToUseLayers": true,
+      "returnFeatureCollection": false,
+      "toolLabel": "计划路径"
+    },
+    {
+      "name": "TraceDownstream",
+      "showHelp": true,
+      "showCredits": true,
+      "showChooseExtent": true,
+      "showReadyToUseLayers": true,
+      "returnFeatureCollection": false,
+      "toolLabel": "网络下溯追踪"
+    }
+  ]
+}

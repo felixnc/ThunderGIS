@@ -1,4 +1,5 @@
-﻿var RealTimethunder;
+﻿/// <reference path="jquery-1.6.4-vsdoc.js" />
+var RealTimethunder;
 var map;
 require([
   "esri/map", "esri/dijit/BasemapGallery", "esri/arcgis/utils",
@@ -11,7 +12,7 @@ require([
   parser
 ) {
     parser.parse();
-
+  
     map = new Map("map", {
         //basemap: "topo",
         center: [103.35, 34.8],
@@ -29,14 +30,16 @@ require([
     basemapGallery.on("error", function (msg) {
         console.log("basemap gallery error:  ", msg);
     });
-
+    
+    $.connection.hub.start();
     RealTimethunder = $.connection.thunderCon;
     RealTimethunder.client.showdata = function showdata(str)
     {
         alert(str);
     }
+    
     // Everything is ready, now start the connection
-    //$.connection.hub.start();
+    
    
 
 });

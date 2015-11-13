@@ -67,8 +67,8 @@ namespace Thunder
         {
 
             
-            string constr = "Data Source=thunder;User Id=thunder;Password=thunder;";
-            //string constr = "Data Source=(DESCRIPTION=(ADDRESS=(PROTOCOL=TCP)(HOST=119.2.29.18)(PORT=1521))(CONNECT_DATA=(SERVICE_NAME=thunder)));User Id=thunder;Password=thunder;";
+           // string constr = "Data Source=thunder;User Id=thunder;Password=thunder;";
+            string constr = "Data Source=(DESCRIPTION=(ADDRESS=(PROTOCOL=TCP)(HOST=119.2.29.18)(PORT=1521))(CONNECT_DATA=(SERVICE_NAME=thunder)));User Id=thunder;Password=thunder;";
             string table = "STATIONSTATE";
             //try
             //{

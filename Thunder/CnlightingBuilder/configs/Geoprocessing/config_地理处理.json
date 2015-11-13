@@ -1,0 +1,190 @@
+{
+  "name": "Model",
+  "displayName": "Model",
+  "description": "Point",
+  "category": "",
+  "helpUrl": "http://119.2.29.21:6080/arcgis/rest/directories/arcgisoutput/GPtest/PointsDensityGP_GPServer/GPtest_PointsDensityGP/Model.htm",
+  "serverInfo": {
+    "currentVersion": 10.2,
+    "url": "http://localhost:6080/arcgis/rest/services/GPtest/PointsDensityGP/GPServer/",
+    "hasResultMapServer": true,
+    "supportsUpload": false
+  },
+  "useResultMapServer": true,
+  "taskUrl": "http://localhost:6080/arcgis/rest/services/GPtest/PointsDensityGP/GPServer/Model",
+  "isSynchronous": false,
+  "inputParams": [
+    {
+      "name": "testpoints",
+      "dataType": "GPFeatureRecordSetLayer",
+      "description": "Pont source",
+      "defaultValue": {
+        "displayFieldName": "",
+        "geometryType": "esriGeometryPoint",
+        "spatialReference": {
+          "wkid": 4326,
+          "latestWkid": 4326
+        },
+        "fields": [
+          {
+            "name": "OBJECTID",
+            "type": "esriFieldTypeOID",
+            "alias": "OBJECTID"
+          },
+          {
+            "name": "LATITUDE",
+            "type": "esriFieldTypeDouble",
+            "alias": "LATITUDE"
+          },
+          {
+            "name": "LONGITUDE",
+            "type": "esriFieldTypeDouble",
+            "alias": "LONGITUDE"
+          },
+          {
+            "name": "INTENS",
+            "type": "esriFieldTypeDouble",
+            "alias": "INTENS"
+          },
+          {
+            "name": "SLOPE",
+            "type": "esriFieldTypeDouble",
+            "alias": "SLOPE"
+          },
+          {
+            "name": "ERROR",
+            "type": "esriFieldTypeDouble",
+            "alias": "ERROR"
+          },
+          {
+            "name": "LOCATION",
+            "type": "esriFieldTypeString",
+            "alias": "LOCATION",
+            "length": 255
+          },
+          {
+            "name": "DATETIME",
+            "type": "esriFieldTypeDate",
+            "alias": "DATETIME",
+            "length": 8
+          },
+          {
+            "name": "HOUR",
+            "type": "esriFieldTypeInteger",
+            "alias": "HOUR"
+          },
+          {
+            "name": "MINUTE",
+            "type": "esriFieldTypeInteger",
+            "alias": "MINUTE"
+          },
+          {
+            "name": "SECOND",
+            "type": "esriFieldTypeInteger",
+            "alias": "SECOND"
+          },
+          {
+            "name": "MINISECOND",
+            "type": "esriFieldTypeInteger",
+            "alias": "MINISECOND"
+          },
+          {
+            "name": "PROVINCE",
+            "type": "esriFieldTypeString",
+            "alias": "PROVINCE",
+            "length": 255
+          },
+          {
+            "name": "DISTRICT",
+            "type": "esriFieldTypeString",
+            "alias": "DISTRICT",
+            "length": 255
+          },
+          {
+            "name": "COUNTRY",
+            "type": "esriFieldTypeString",
+            "alias": "COUNTRY",
+            "length": 255
+          },
+          {
+            "name": "INPUTTIME",
+            "type": "esriFieldTypeDate",
+            "alias": "INPUTTIME",
+            "length": 8
+          },
+          {
+            "name": "PROCESSFLAG",
+            "type": "esriFieldTypeInteger",
+            "alias": "PROCESSFLAG"
+          },
+          {
+            "name": "USEDIDS",
+            "type": "esriFieldTypeString",
+            "alias": "USEDIDS",
+            "length": 255
+          },
+          {
+            "name": "CG_IC",
+            "type": "esriFieldTypeString",
+            "alias": "CG_IC",
+            "length": 255
+          },
+          {
+            "name": "HEIGHT",
+            "type": "esriFieldTypeDouble",
+            "alias": "HEIGHT"
+          }
+        ],
+        "features": [],
+        "exceededTransferLimit": false
+      },
+      "category": "",
+      "label": "testpoints",
+      "visible": true,
+      "required": true,
+      "featureSetMode": "draw",
+      "tooltip": "testpoints",
+      "symbol": {
+        "color": [
+          0,
+          0,
+          128,
+          128
+        ],
+        "size": 18,
+        "angle": 0,
+        "xoffset": 0,
+        "yoffset": 0,
+        "type": "esriSMS",
+        "style": "esriSMSCircle",
+        "outline": {
+          "color": [
+            0,
+            0,
+            128,
+            255
+          ],
+          "width": 0.75,
+          "type": "esriSLS",
+          "style": "esriSLSSolid"
+        }
+      }
+    }
+  ],
+  "outputParams": [
+    {
+      "name": "PointDensity",
+      "dataType": "GPRasterDataLayer",
+      "description": "PointDensity",
+      "defaultValue": null,
+      "category": "",
+      "label": "PointDensity",
+      "visible": true,
+      "required": true
+    }
+  ],
+  "shareResults": true,
+  "layerOrder": [
+    "testpoints"
+  ]
+}
