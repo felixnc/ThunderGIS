@@ -5,9 +5,9 @@ VisualStudioVersion = 14.0.23107.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Thunder", "Thunder\Thunder.csproj", "{13EE0805-17A1-446E-BF02-77813483CCA5}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TableDependency", "..\tabledependency-4.00\TableDependency\TableDependency.csproj", "{0A46A45A-BE9B-455F-A6D1-183C07FEF4BC}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TableDependency", "TableDependency\TableDependency.csproj", "{0A46A45A-BE9B-455F-A6D1-183C07FEF4BC}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TableDependency.OracleClient", "..\tabledependency-4.00\TableDependency.OracleClient\TableDependency.OracleClient.csproj", "{41F1E2B4-5F77-4F40-A511-2F90C8DFDB12}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TableDependency.OracleClient", "TableDependency.OracleClient\TableDependency.OracleClient.csproj", "{41F1E2B4-5F77-4F40-A511-2F90C8DFDB12}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
