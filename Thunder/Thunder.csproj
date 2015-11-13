@@ -90,16 +90,35 @@
     <Reference Include="System.Web.Services" />
     <Reference Include="System.EnterpriseServices" />
     <Reference Include="System.Xml.Linq" />
-    <Reference Include="TableDependency, Version=4.2.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\packages\OracleTableDependency.4.0.0.0\TableDependency.dll</HintPath>
-    </Reference>
-    <Reference Include="TableDependency.OracleClient, Version=4.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\packages\OracleTableDependency.4.0.0.0\TableDependency.OracleClient.dll</HintPath>
-    </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="bin\Interop.ORADCLib.dll" />
+    <Content Include="bin\Microsoft.AspNet.SignalR.Core.dll" />
+    <Content Include="bin\Microsoft.AspNet.SignalR.Core.xml" />
+    <Content Include="bin\Microsoft.AspNet.SignalR.SystemWeb.dll" />
+    <Content Include="bin\Microsoft.AspNet.SignalR.SystemWeb.xml" />
+    <Content Include="bin\Microsoft.Owin.dll" />
+    <Content Include="bin\Microsoft.Owin.Host.SystemWeb.dll" />
+    <Content Include="bin\Microsoft.Owin.Host.SystemWeb.xml" />
+    <Content Include="bin\Microsoft.Owin.Security.dll" />
+    <Content Include="bin\Microsoft.Owin.Security.xml" />
+    <Content Include="bin\Microsoft.Owin.xml" />
+    <Content Include="bin\Microsoft.Web.Infrastructure.dll" />
+    <Content Include="bin\Newtonsoft.Json.dll" />
+    <Content Include="bin\Newtonsoft.Json.xml" />
+    <Content Include="bin\Oracle.DataAccess.dll" />
+    <Content Include="bin\Owin.dll" />
+    <Content Include="bin\TableDependency.dll" />
+    <Content Include="bin\TableDependency.OracleClient.dll" />
+    <Content Include="bin\TableDependency.OracleClient.pdb" />
+    <Content Include="bin\TableDependency.pdb" />
+    <Content Include="bin\Thunder.dll" />
+    <Content Include="bin\Thunder.pdb" />
+    <Content Include="bin\zh-Hans\Microsoft.AspNet.SignalR.Core.resources.dll" />
+    <Content Include="bin\zh-Hans\Microsoft.AspNet.SignalR.SystemWeb.resources.dll" />
+    <Content Include="bin\zh-Hans\Microsoft.Owin.Host.SystemWeb.resources.dll" />
+    <Content Include="bin\zh-Hans\Microsoft.Owin.resources.dll" />
+    <Content Include="bin\zh-Hans\Microsoft.Owin.Security.resources.dll" />
     <Content Include="CnlightingBuilder\jimu.js\dijit\SymbolsInfo\0.json" />
     <Content Include="CnlightingBuilder\jimu.js\dijit\SymbolsInfo\1.json" />
     <Content Include="CnlightingBuilder\jimu.js\dijit\SymbolsInfo\10.json" />
@@ -176,6 +195,7 @@
     <Content Include="CnlightingBuilder\widgets\TimeSlider\config.json" />
     <Content Include="CnlightingBuilder\widgets\TimeSlider\manifest.json" />
     <Content Include="CnlightingBuilder\widgets\ZoomSlider\manifest.json" />
+    <Content Include="bin\Thunder.dll.config" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -2530,7 +2550,16 @@
       <EmbedInteropTypes>True</EmbedInteropTypes>
     </COMReference>
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <ProjectReference Include="..\TableDependency.OracleClient\TableDependency.OracleClient.csproj">
+      <Project>{41f1e2b4-5f77-4f40-a511-2f90c8dfdb12}</Project>
+      <Name>TableDependency.OracleClient</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\TableDependency\TableDependency.csproj">
+      <Project>{0a46a45a-be9b-455f-a6d1-183c07fef4bc}</Project>
+      <Name>TableDependency</Name>
+    </ProjectReference>
+  </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
